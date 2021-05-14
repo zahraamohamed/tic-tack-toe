@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/b1"
+    tools:context=".BasicActivity"
+    >
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/player_one_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 1 Points 😃 : "
+
+            android:textSize="16sp"
+            android:layout_margin="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/chewy"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/player_two_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/chewy"
+        android:text="Player 2 Points 😃 : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/bu1"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+            android:onClick="buClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bu2"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bu3"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu4"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bu5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:onClick="buClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bu6"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bu7"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bu8"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+
+        <Button
+            android:id="@+id/bu9"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_margin="5dp"
+            android:elevation="24dp"
+
+            android:onClick="buClick"
+            android:text="" />
+    </TableRow>
+</TableLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="❌ win 😃"
+    android:textColor="@color/red"
+    android:textStyle="bold"
+    android:textSize="36sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/bu10"
+    android:layout_marginBottom="24dp"
+    android:visibility="invisible"
+    android:id="@+id/x_win"
+    />
+    <TextView
+        android:id="@+id/o_win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O win 😃"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bu10"
+        android:layout_marginBottom="24dp"
+        android:visibility="invisible"
+        />
+        <Button
+            android:id="@+id/bu10"
+            android:layout_width="200dp"
+            android:layout_height="20pt"
+            android:layout_margin="16dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/chewy"
+
+            android:text="Reset Game"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

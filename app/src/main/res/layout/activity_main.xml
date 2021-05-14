@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_face_24"
+
+        android:layout_margin="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_baseline_east_24"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="24dp"
+
+        android:src="@drawable/ic_img"
+        app:layout_constraintBottom_toTopOf="@+id/button_manual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="Tic Tac Toe"
+        android:elevation="24dp"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/chewy"
+
+        android:textColor="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:text="Play with friend"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"
+        android:elevation="24dp"
+        android:fontFamily="@font/chewy"
+
+        app:layout_constraintBottom_toTopOf="@+id/button_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_app"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Play with App"
+
+        android:elevation="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button_shape"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/chewy"
+
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/button_manual"
+        app:layout_constraintStart_toStartOf="@id/button_manual"
+    />
+</androidx.constraintlayout.widget.ConstraintLayout>
